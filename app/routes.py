@@ -16,3 +16,7 @@ def contact():
 @app.route('/services')
 def services():
     return render_template('services.html')
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
