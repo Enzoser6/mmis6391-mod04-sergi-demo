@@ -20,3 +20,12 @@ def services():
 @app.route('/portfolio')
 def portfolio():
     return render_template('portfolio.html')
+
+ @app.route('/runners')
+def runners():
+    return render_template('runners.html')
+
+ @app.route('/update_runner/<runner_id>')
+def update_runner(runner_id):
+     # Fetch the runner data based on the runner_id
+    return render_template('update_runner.html', runner=runner_data)
