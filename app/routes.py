@@ -21,3 +21,6 @@ def services():
 def runners():
     return render_template('runners.html')
 
+@app.route ('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
